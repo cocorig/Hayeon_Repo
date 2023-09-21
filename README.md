@@ -21,3 +21,28 @@
 내 컴퓨터 (로컬 저장소) 깃에 있는거 (원격 저장소)
 
 - git add <추가할 경로> : 내 변경사항을 로컬에 있는 깃에다 적용을 한 것.
+- git commit 'm'
+- git status -  내 git의 현재상태를 본다
+- git diff - (이전 기록)commit을 기준으로 변경사항을 본다
+
+
+
+파일의 상태에 따라 **Untracked 와 Tracked 로 분류됩니다.**
+
+1) **Untracked**(관리 대상이 아님) : 파일 생성 후 한번도 `git add`하지 않은 상태를 말합니다.
+
+2) **Tracked**(관리 대상임) : git이 관리하는 파일임을 의미합니다.
+
+- `Unmodified` : 최근의 커밋과 비교했을 때 바뀐 내용이 없는 상태
+- `Modified` : 최근 커밋과 비교했을 때 바뀐 내용이 있는 상태
+- `Staged` : 파일이 수정되고 나서 스테이지 공간에 올라와 있는 상태이며, `git add` 후의 상태
+
+<img width="242" alt="" src="https://github.com/cocorig/Hayeon_Repo/assets/95855640/4182409f-f65c-4b9b-83d4-3bd081df16da">
+
+💥 한번에 하는 작업단위로해서 commit 하기
+
+- M    : 수정됨
+
+- D    : 삭제됨 (git항목에서 표시)
+
+- U    : 추적되지 않음. (git항목에서 표시)
