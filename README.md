@@ -51,3 +51,19 @@
 기본적으로 1개의 브랜치는 존재합니다 !
 그걸 기본브랜치라고 하구요
 github에서 만든 레포의 main, git init을 통해만든 저장소의 master가 기본브랜치에 해당됩니다
+
+git restore 
+변경된 사항 -> modified된 변경사항을 복구시킨다
+`restore`는 파일의 수정 내용 복원과 `add` 를 통해 스테이지에 올린 파일을 빼낼 때 사용합니다.
+
+js의 모든 파일을 복구시킬 수도 있다.
+git restore *.js
+
+ -  restore 명령어를 이용하여 빼기
+
+ - git restore --staged README.md
+
+
+ - 특정 브랜치를 삭제하는 명령어 입니다.
+ 현재 main인 브랜치에 있다면 삭제되자않는다.
+ - git branch -D <삭제할 브랜치명>
